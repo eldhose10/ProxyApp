@@ -5,6 +5,7 @@ using System.Net;
 
 namespace ProxyApp.Controllers
 {
+    [EnableRateLimiting("fixed")]
     public class HomeController : Controller
     {
         private readonly IExternalApiService _apiService;
